@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <table style="border:2px">
+
+       <style>table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        background-color: pink;}
+        </style>
+
+        <form action="/register">
+        <tr>
+            <td>Name</td> 
+            <td ><input type="textbox" size="6"></td>
+        </tr>
+        <tr>
+            <td>Employee Code</td>
+            <td><input type="textbox" size="1"></td>
+        </tr>
+        <tr>
+            <td> Department</td>
+            <td><input type="radio" Name="dept" id="admin"><label for="admin">ADMIN</label><br>
+                <input type="radio" Name="dept" id="hr"><label for="hr">HR</label><br>
+                <input type="radio" Name="dept" id="tc"><label for="tc">TECHNICAL</label><br>
+                <input type="radio" Name="dept" id="ac"><label for="ac">ACCOUNT</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Date of Joining</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>
+                <textarea name="Addr" id="addr" cols="30" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Training program Attended</td>
+            <td><input type="checkbox" id="html"><label for="html">HTML/DHTM</label><br>
+                <input type="checkbox"id="java"><label for="java">JAVA</label><br>
+                <input type="checkbox"id="client"><label for="client">CLIENT/SERVER</label><br>
+                <input type="checkbox"id="net"><label for="net">.NET</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>Training Programs need to attend</td>
+            <td><select name="subject" id="subject">
+                <option value="JAVASCRIPT">JAVASCRIPT</option>
+                <option value="jst">JSTRUTS</option>
+                <option value="python">PYTHON</option>
+                <option value="node">NODE</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Send the information at</td>
+            <td><a href="empinfo@patni.com">empinfo@patni.com</a></td>
+        </tr>
+
+    </form>
+    </table>
+</body>
+</html>
